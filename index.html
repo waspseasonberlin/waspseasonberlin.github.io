@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>berlin wasp seasonal report</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+    </head>
+    <body>
+        <div id="parent">
+            <h2 id="child" class="status">
+                yes >:(
+            </h2>
+            <br/>
+            <div id="wasp">
+                <img src="/images/waspen.png" alt="gegen waspen" />
+            </div>
+        </div>
+    </body>
+
+    <script >
+        var d = new Date();
+        var month = d.getUTCMonth();
+        if (month >= 7 && month <= 9){
+        document.getElementById("child").innerHTML = "yes >:("
+        } else{
+
+        document.getElementById("child").innerHTML = "no! :D"
+        }
+    </script>
+</html>
